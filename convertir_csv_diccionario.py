@@ -2,13 +2,13 @@ import csv
 
 
 def convertir_csv_diccionarios(nombre_archivo):
-    separador = ","
+    
     with open(nombre_archivo, encoding="utf-8") as archivo:
         next(archivo)  # Omitir encabezado del archivo
         juegos = []
         for linea in archivo:
             linea = linea.rstrip("\n")  # Quitar salto de línea
-            columnas = linea.split(separador)
+            columnas = linea.split(',')
             nombre = columnas[1]
             plataforma = columnas[2]
             año = columnas[3]
