@@ -1,6 +1,6 @@
 import csv
 
-juegos = {1:2, 2:1, 5:2}
+
 
 def borrar(juegos):
     a = True
