@@ -24,8 +24,13 @@ def borrar(juegos):
                 print("Se ha borrado la entrada seleccionada")
                 continuar = pregunta_continuar("¿Quieres eliminar otra entrada? s/n:\n")
             else:
+<<<<<<< HEAD
                 print("Ese videojuego no consta en nuestro archivo")
                 continuar = pregunta_continuar("¿Quieres eliminar otra entrada? s/n:\n")
+=======
+                print("Ese videojuego no consta en nuestro archivo. Vuelve a intentarlo")
+                a = False
+>>>>>>> c95248c4de20147f4ac85f649e62daa1d4b006e5
 
 
 def main():
