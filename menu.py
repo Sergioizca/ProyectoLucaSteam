@@ -18,3 +18,4 @@ match valor:
     case 5 | None:
         print("Salir")
 
+#Pdte ampliar el menú (si fuera necesario), acotar rango de numeros.
