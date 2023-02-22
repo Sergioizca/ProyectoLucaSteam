@@ -3,7 +3,7 @@ import csv
 
 def convertir_csv_diccionarios(nombre_archivo):
     juegos = []
-    with open(nombre_archivo, newline='', encoding='utf-8') as archivo:
+    with open(nombre_archivo, newline='\n', encoding='utf-8') as archivo:
         lista = csv.reader(archivo, delimiter=',', quotechar='"')
         
         next(lista)  # Omitir encabezado del archivo
