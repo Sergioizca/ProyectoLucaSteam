@@ -15,7 +15,7 @@ def pregunta_continuar(mensaje):
     return True
 
 
-def borrar_juegos(juegos):
+def borrar(juegos):
     # Función para borrar juegos del diccionario importado de csv
     continuar = True
     while continuar:
@@ -43,8 +43,8 @@ def borrar_juegos(juegos):
                 "Ese juego no consta en nuestro archivo. ¿Quieres intentarlo de nuevo? s/n:\n")
 
 
-def main():
-    borrar_juegos(convertir_csv_diccionarios("prueba.csv"))
+def borrar_juegos():
+    borrar(convertir_csv_diccionarios("prueba.csv"))
 
 
-main()
+borrar_juegos()
