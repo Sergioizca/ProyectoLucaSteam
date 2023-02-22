@@ -7,7 +7,6 @@ from modificar_juego import *
 
 def menu(lista):
     seguir=True
-    lista=convertir_csv_diccionarios("vgsales.csv")
     while seguir:
         print(" **** MENU **** \n **** 1.Añadir **** \n **** 2.Borrar **** \n **** 3.Modificar **** \n **** 4.Listar **** \n **** 5.Salir **** \n ***************")
         valor=int(input("Selecciona una opción: "))
