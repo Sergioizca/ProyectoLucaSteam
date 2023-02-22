@@ -5,12 +5,13 @@
 def mostrar_lista_juegos(lista):
     print(lista)
 
+
 """
 # ***PRUEBAS***
 
 def main():
-    mostrar_lista_juegos(convertir_csv_diccionarios("prueba.csv"))
-
+    lista=convertir_csv_diccionarios("vgsales.csv")
+    mostrar_lista_juegos(lista)
 
 main()
 
