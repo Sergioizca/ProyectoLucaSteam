@@ -8,6 +8,7 @@ def encontrar(juegos):
             "Inserta el nombre del juego que deseas encontrar: \n")    
     for juego in juegos:
             if juego["nombre"] == nombre_encontrar:
+                print(juego)
                 return juego
 def modificar_juego(juegos, cambio):
     if cambio == 1:
@@ -51,11 +52,4 @@ def modificar_juego(juegos, cambio):
         print(f"\nElemento editado correctamente: {juegos}\n")
     else:
         print(f"\nSeleccione un elemento correcto")
-"""
-def main():
-    juegos = convertir_csv_diccionarios("vgsales.csv")
-    diccionario = encontrar(juegos)
-    print(f"\n{diccionario}\n")
-    cambio = obtener_cambio()
-    modificar_juego(diccionario, cambio)
-main()"""
+

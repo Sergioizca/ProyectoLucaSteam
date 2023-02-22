@@ -2,6 +2,8 @@
 from convertir_csv_diccionario import *
 from borrar import *
 from mostrar_lista_juegos import *
+from obtener_cambio import *
+from modificar_juego import *
 
 
 seguir=True
@@ -19,7 +21,7 @@ while seguir:
                 borrar_de_dic(lista)
             case 3 | None:
                 print("Modificar")
-                # modificar_juego(obtener_cambio())
+                modificar_juego(encontrar(lista), obtener_cambio())
             case 4 | None:
                 print("Listar")
                 mostrar_lista_juegos(lista)
