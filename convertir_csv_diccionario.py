@@ -1,6 +1,11 @@
 import csv
 
-
+def convertir_año(año):
+    if año.isdigit():
+        return int(año)
+    else:
+        return('Año desconocido')
+    
 def convertir_csv_diccionarios(nombre_archivo):
     juegos = []
     with open(nombre_archivo, newline='\n', encoding='utf-8') as archivo:
@@ -25,7 +30,7 @@ def convertir_csv_diccionarios(nombre_archivo):
             juegos.append({
                 "nombre": nombre,
                 "plataforma": plataforma,
-                "año": int(año),
+                "año": convertir_año(año),
                 "genero": genero,
                 "publisher": empresa,
                 "na_sales": float(na_sales),
@@ -35,3 +40,4 @@ def convertir_csv_diccionarios(nombre_archivo):
                 "global_sales": float(global_sales)
             })
         return juegos
+
