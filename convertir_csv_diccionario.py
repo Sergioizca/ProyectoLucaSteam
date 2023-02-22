@@ -33,5 +33,3 @@ def convertir_csv_diccionarios(nombre_archivo):
                 "global_sales": float(global_sales)
             })
         return juegos
-    
-    import csv
