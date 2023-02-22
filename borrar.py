@@ -14,6 +14,7 @@ def borrar(juegos):
                 a = False
             else:
                 print("Ese videojuego no consta en nuestro archivo. Vuelve a intentarlo")
+                a = False
 
 
 def main():
