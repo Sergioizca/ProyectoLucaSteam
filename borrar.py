@@ -1,6 +1,8 @@
 import csv
 from convertir_csv_diccionario import *
 
+# Introducir bucle que pregunte si quiere salir con teclado
+# o si quiere continuar eliminando otro juego
 
 def borrar(juegos):
     a = True
