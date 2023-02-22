@@ -29,4 +29,4 @@ while seguir:
     else:
         print("----------Selecciona una opción correcta----------")
 
-# Pdte ampliar el menú (si fuera necesario), acotar rango de numeros.
+# Pdte ampliar el menú (si fuera necesario), try-except.
