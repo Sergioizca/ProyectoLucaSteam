@@ -25,11 +25,11 @@ def convertir_csv_diccionarios(nombre_archivo):
             juegos.append({
                 "nombre": nombre,
                 "plataforma": plataforma,
-                "año": año,
+                "año": int(año),
                 "genero": genero,
                 "publisher": empresa,
-                "na_sales": na_sales,
-                "eu_sales": eu_sales,
+                "na_sales": float(na_sales),
+                "eu_sales": float(eu_sales),
                 "jp_sales": float(jp_sales),
                 "other_sales": float(other_sales),
                 "global_sales": float(global_sales)
