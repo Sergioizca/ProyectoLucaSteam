@@ -8,7 +8,7 @@ def borrar(juegos):
         nombre_borrar = input(
             "Inserta el nombre del juego que deseas borrar: \n")
         for i in juegos:
-            if i["nombre"] == nombre_borrar:
+            if i["nombre"] == nombre_borrar and a:
                 juegos.remove(i)
                 print("Se ha borrado la entrada seleccionada")
                 a = False
