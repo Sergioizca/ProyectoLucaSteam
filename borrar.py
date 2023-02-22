@@ -18,15 +18,18 @@ def borrar(juegos):
     while continuar:
         nombre_borrar = input(
             "Inserta el nombre del juego que deseas borrar: \n")
-        for i in juegos:
-            if i["nombre"] == nombre_borrar:
-                juegos.remove(i)
-                print("Se ha borrado la entrada seleccionada")
-                continuar = pregunta_continuar("¿Quieres eliminar otra entrada? s/n:\n")
-            else:
-                print("Ese videojuego no consta en nuestro archivo")
-                continuar = pregunta_continuar("¿Quieres eliminar otra entrada? s/n:\n")
-
+        juego_encontrado = False
+        for juego in juegos:
+            if juego["nombre"] == nombre_borrar:
+                juegos.remove(juego)
+                juego_encontrado = True
+                break
+        if juego_encontrado:
+            continuar = pregunta_continuar(
+                "Se ha borrado la entrada seleccionada. ¿Quieres eliminar otra entrada? s/n:\n")
+        else:
+            continuar = pregunta_continuar(
+                "Ese juego no consta en nuestro archivo. ¿Quieres intentarlo de nuevo? s/n:\n")
 
 
 def main():
