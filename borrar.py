@@ -1,5 +1,3 @@
-import csv
-import os
 from convertir_csv_diccionario import *
 
 # Introducir bucle que pregunte si quiere salir con teclado
@@ -15,7 +13,7 @@ def pregunta_continuar(mensaje):
     return True
 
 
-def borrar(juegos):
+def borrar_de_dic(juegos):
     # Función para borrar juegos del diccionario importado de csv
     continuar = True
     while continuar:
@@ -41,10 +39,3 @@ def borrar(juegos):
         else:
             continuar = pregunta_continuar(
                 "Ese juego no consta en nuestro archivo. ¿Quieres intentarlo de nuevo? s/n:\n")
-
-
-def borrar_juegos():
-    borrar(convertir_csv_diccionarios("prueba.csv"))
-
-
-borrar_juegos()

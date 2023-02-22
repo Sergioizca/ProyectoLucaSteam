@@ -1,7 +1,7 @@
 # menu
 from convertir_csv_diccionario import *
-from mostrar_lista_juegos import *
 from borrar import *
+from mostrar_lista_juegos import *
 
 print(" **** MENU **** \n **** 1.Añadir **** \n **** 2.Borrar **** \n **** 3.Modificar **** \n **** 4.Listar **** \n **** 5.Salir **** \n ***************")
 valor = int(input())
@@ -11,8 +11,8 @@ match valor:
         # agregar_juego()
         print("Añadir")
     case 2 | None:
-        print("Borrar")
-        borrar_juegos()
+        print("Eliminar")
+        borrar_de_dic(lista)
     case 3 | None:
         print("Modificar")
         # modificar_juego(obtener_cambio())
