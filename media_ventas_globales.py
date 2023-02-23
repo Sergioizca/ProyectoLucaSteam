@@ -1,6 +1,7 @@
 import pandas as pd
 
-
+#Esta función calcula la media de la columa Ventas Globales
+#Y devuelve el archivo con todos los juegos que tuvieran mas ventas que la media
 def media_ventas_globales(archivo):
 
     df = pd.read_csv(archivo)
@@ -9,4 +10,4 @@ def media_ventas_globales(archivo):
     print(encima_media)
 
 
-media_ventas_globales("vgsales.csv")
+# media_ventas_globales("vgsales.csv")
