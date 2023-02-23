@@ -23,7 +23,7 @@ def menu(lista):
                     modificar_juego(encontrar(lista), obtener_cambio())
                 case 4 | None:
                     print("Listar")
-                    mostrar_lista_juegos(lista)
+                    mostrar_lista_juegos()
                 case 5 | None:
                     print("Has salido correctamente")
                     seguir=False
