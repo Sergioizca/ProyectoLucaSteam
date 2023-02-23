@@ -1,11 +1,10 @@
 import pandas as pd
 
-
-def buscar_siglo_veinte(archivo):
+#Esta función busca el archivo y ordena los juegos por género
+def listar_juegos_genero(archivo):
 
     df = pd.read_csv(archivo)
-    df = df[df['Year'] < 2000]
-    print("Juegos del siglo XX:\n")
+    df = df.sort_values[df['Genre']]
     print(df)
 
 
