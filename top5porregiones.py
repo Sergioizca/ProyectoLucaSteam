@@ -32,6 +32,6 @@ def buscar_top_5_ventas_regiones(archivo, region):
     print(f'Top 5 de ventas en {region}:')
     print(top_5)
 
-
-# region = elegir_region()
-# buscar_top_5_ventas_regiones("vgsales.csv", region)
+def elegir_final():
+    region = elegir_region()
+    buscar_top_5_ventas_regiones("vgsales.csv", region)
