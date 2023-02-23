@@ -10,6 +10,10 @@ from buscar_editores import *
 from buscar_5topventas import *
 from buscar_siglo_veinte import *
 from top5porregiones import *
+from listar_juegos_genero import *
+from media_ventas_globales import *
+from buscar_anios_pares import *
+
 
 
 
@@ -60,17 +64,17 @@ def menu(lista):
                     print("Ver juegos del siglo XX")
                     buscar_siglo_veinte(archivo)
                 case 9 | None:
-                    print("Ver listado de juegos de Nintendo")
+                    print("Ver los 5 juegos más vendidos por regiones")
                     elegir_region(archivo)
                 case 10 | None:
-                    print("Ver listado de juegos de Nintendo")
-                    buscar_nintendo(archivo)
+                    print("Ver listado de juegos de filtrados por género")
+                    listar_juegos_genero(archivo)
                 case 11 | None:
-                    print("Ver listado de juegos de Nintendo")
-                    buscar_nintendo(archivo)
+                    print("Ver listado de juegos con ventas mayores a la media")
+                    media_ventas_globales(archivo)
                 case 12 | None:
-                    print("Ver listado de juegos de Nintendo")
-                    buscar_nintendo(archivo)
+                    print("Ver listado de juegos que salieron en años pares")
+                    buscar_anios_pares(archivo)
                 case 13 | None:
                     print("Has salido correctamente")
                     seguir = False
