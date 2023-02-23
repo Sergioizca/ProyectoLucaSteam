@@ -7,14 +7,12 @@ from modificar_juego import *
 from Añadir_juego import *
 from buscar_nintendo import *
 from buscar_editores import *
-from Buscar_5topventas import *
+from buscar_5topventas import *
 from buscar_siglo_veinte import *
 from top5porregiones import *
 from listar_juegos_genero import *
 from media_ventas_globales import *
 from buscar_anios_pares import *
-
-
 
 
 def menu(lista):
@@ -65,7 +63,7 @@ def menu(lista):
                     buscar_siglo_veinte(archivo)
                 case 9 | None:
                     print("Ver los 5 juegos más vendidos por regiones")
-                    elegir_final(archivo)
+                    elegir_final()
                 case 10 | None:
                     print("Ver listado de juegos de filtrados por género")
                     listar_juegos_genero(archivo)
@@ -84,6 +82,7 @@ def menu(lista):
 
 if __name__ == "__main__":
     archivo = str("vgsales.csv")
+
     def main():
         lista = convertir_csv_diccionarios("vgsales.csv")
         menu(lista)
