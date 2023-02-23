@@ -7,14 +7,12 @@ from modificar_juego import *
 from Añadir_juego import *
 from buscar_nintendo import *
 from buscar_editores import *
-from Buscar_5topventas import *
+from buscar_5topventas import *
 from buscar_siglo_veinte import *
 from top5porregiones import *
 from listar_juegos_genero import *
 from media_ventas_globales import *
 from buscar_anios_pares import *
-
-
 
 
 def menu(lista):
