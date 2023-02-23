@@ -5,5 +5,5 @@ def buscar_editores(archivo):
     datos = pd.read_csv(archivo)
     juegos_editor =  datos.loc[datos['Publisher'].isin([editor, 'N/A', ""])]
     
-    print("Lo que sea:")
+    print(f"Los juegos de {editor} son:")
     print(juegos_editor)
