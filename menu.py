@@ -2,6 +2,8 @@
 from convertir_csv_diccionario import *
 from borrar import *
 from mostrar_lista_juegos import *
+from obtener_cambio import *
+from modificar_juego import *
 
 def menu(lista):
     seguir=True
@@ -18,16 +20,15 @@ def menu(lista):
                     borrar_de_dic(lista)
                 case 3 | None:
                     print("Modificar")
-                    # modificar_juego(obtener_cambio())
+                    modificar_juego(encontrar(lista), obtener_cambio())
                 case 4 | None:
                     print("Listar")
-                    mostrar_lista_juegos(lista)
+                    mostrar_lista_juegos()
                 case 5 | None:
                     print("Has salido correctamente")
                     seguir=False
         else:
             print("----------Selecciona una opción correcta----------")
-
 if __name__ == "__main__":
     def main():
         lista=convertir_csv_diccionarios("vgsales.csv")
