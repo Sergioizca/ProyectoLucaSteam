@@ -7,7 +7,6 @@ def encontrar(juegos):
             "Inserta el nombre del juego que deseas encontrar: \n")    
     for juego in juegos:
             if juego["nombre"] == nombre_encontrar:
-                print(juego)
                 return juego
 def modificar_juego(juegos, cambio):
     if cambio == 1:
