@@ -9,7 +9,7 @@ from Añadir_juego import *
 def menu(lista):
     seguir=True
     while seguir:
-        print(" **** MENU **** \n **** 1.Añadir **** \n **** 2.Borrar **** \n **** 3.Modificar **** \n **** 4.Listar **** \n **** 5.Salir **** \n ***************")
+        print(" Bienvenido al menú. Teclee el número al que desea acceder: \n\n 1. Añadir videojuego a la lista \n\n 2. Borrar videojuego de la lista \n\n 3. Modificar videojuego de la lista \n\n 4. Ver listado completo de videojuegos \n\n 5. Salir del menú \n ")
         valor=int(input("Selecciona una opción: "))
         if (valor>0 and valor<=5):
             match valor:
