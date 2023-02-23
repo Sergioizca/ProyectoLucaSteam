@@ -26,9 +26,17 @@ def borrar_de_dic(juegos):
         # Busca en el campo "nombre" el valor introducido para ver si coincide en el diccionario
         for juego in juegos:
             if juego["nombre"] == nombre_borrar:
-                juegos.remove(juego)
-                juego_encontrado = True  # Variable cambia el estado a "encontrada"
-                break
+            
+                a = input(f"¿Quieres eliminar este juego? (1 = si/2 = no): {juego}")
+                
+                if a == '1':
+                    juegos.remove(juego)
+                    juego_encontrado = True  # Variable cambia el estado a "encontrada"
+                else:    
+                    print('Juego no eliminado')
+                    break
+                    
+                
         # Si la variable ha sido encontrada, el valor "nombre" introducido se borrará
         # Este if pregunta si quieres ejecutar el código de nuevo
         if juego_encontrado:
