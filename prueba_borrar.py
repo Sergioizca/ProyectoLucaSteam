@@ -1,22 +1,6 @@
 import unittest
 
-def prueba_borrar():
-    
-class PruebaTestFixture(unittest.TestCase):
-
-    def setUp(self):
-        print("Preparando el contexto")
-        self.juegos = [1, 2, 3, 4, 5]
-
-    def test(self):
-        print("Realizando una prueba")
-        r = [doblar(n) for n in self.juegos]
-        self.assertEqual(r, [2, 4, 6, 8, 10])
-
-    def tearDown(self):
-        print("Destruyendo el contexto")
-        del(self.juegos)
-
-
-if __name__ == '__main__':
-    unittest.main() 
+def esta_juego_presente(juegos, nombre)
+    nombre_a_borrar = juegos[0]["nombre"] # pillamos el primer juego
+    borrar_juego(juegos, nombre_a_borrar)
+    assert(not esta_juego_presente(juegos, nombre_a_borrar)
