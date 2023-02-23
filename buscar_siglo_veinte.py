@@ -4,8 +4,9 @@ import pandas as pd
 def buscar_siglo_veinte(archivo):
 
     df = pd.read_csv(archivo)
-    juegos_siglo_veinte = df.loc[df['Year']]
+    df= pd.read_csv(archivo)
+    df= df[df['Year'] < 2000]
     print("Juegos del siglo XX:\n")
-    print(juegos_siglo_veinte)
+    print(df)
 
 buscar_siglo_veinte("vgsales.csv")
