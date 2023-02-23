@@ -8,7 +8,8 @@ from Añadir_juego import *
 from buscar_nintendo import *
 from buscar_editores import *
 from buscar_5topventas import *
-
+from buscar_siglo_veinte import *
+from top5porregiones import *
 
 
 
@@ -54,13 +55,13 @@ def menu(lista):
                     buscar_editores(archivo)
                 case 7 | None:
                     print("Ver los 5 juegos más vendidos del mundo")
-                    buscar_nintendo(archivo)
+                    buscar_top_5_ventas_globales(archivo)
                 case 8 | None:
-                    print("Ver listado de juegos de Nintendo")
-                    buscar_nintendo(archivo)
+                    print("Ver juegos del siglo XX")
+                    buscar_siglo_veinte(archivo)
                 case 9 | None:
                     print("Ver listado de juegos de Nintendo")
-                    buscar_nintendo(archivo)
+                    elegir_region(archivo)
                 case 10 | None:
                     print("Ver listado de juegos de Nintendo")
                     buscar_nintendo(archivo)
