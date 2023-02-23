@@ -65,7 +65,7 @@ def menu(lista):
                     buscar_siglo_veinte(archivo)
                 case 9 | None:
                     print("Ver los 5 juegos más vendidos por regiones")
-                    elegir_final(archivo)
+                    elegir_final()
                 case 10 | None:
                     print("Ver listado de juegos de filtrados por género")
                     listar_juegos_genero(archivo)
