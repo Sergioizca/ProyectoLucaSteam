@@ -11,6 +11,6 @@ def encontrar(juegos):
                 print(juego)
                 return juego
             
-juegos = convertir_csv_diccionarios("vgsales.cvs")
+juego = convertir_csv_diccionarios("vgsales.cvs")
 
-encontrar(juegos)
+encontrar(juego)
