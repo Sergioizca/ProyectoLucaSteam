@@ -24,7 +24,7 @@ def menu(lista):
                     print("Modificar videojuego de la lista")
                     modificar_juego(encontrar(lista), obtener_cambio())
                 case 4 | None:
-                    print("Listar")
+                    print("Ver listado completo de videojuegos")
                     mostrar_lista_juegos()
                 case 5 | None:
                     print("Has salido correctamente")
