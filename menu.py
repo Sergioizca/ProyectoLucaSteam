@@ -4,6 +4,7 @@ from borrar import *
 from mostrar_lista_juegos import *
 from obtener_cambio import *
 from modificar_juego import *
+from Añadir_juego import *
 
 def menu(lista):
     seguir=True
@@ -13,8 +14,8 @@ def menu(lista):
         if (valor>0 and valor<=5):
             match valor:
                 case 1 | None:
-                    # agregar_juego()
                     print("Añadir")
+                    agregar_juego(lista)
                 case 2 | None:
                     print("Eliminar")
                     borrar_de_dic(lista)
