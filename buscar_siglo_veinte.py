@@ -1,6 +1,6 @@
 import pandas as pd
 
-
+#Esta función devuelve el archivo con los juegos anteriores al año 2000
 def buscar_siglo_veinte(archivo):
 
     df = pd.read_csv(archivo)
