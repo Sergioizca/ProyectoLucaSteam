@@ -9,4 +9,4 @@ def media_ventas_globales(archivo):
     print(encima_media)
 
 
-media_ventas_globales("vgsales.csv")
+# media_ventas_globales("vgsales.csv")

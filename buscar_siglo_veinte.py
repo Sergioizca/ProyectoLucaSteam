@@ -9,4 +9,4 @@ def buscar_siglo_veinte(archivo):
     print(df)
 
 
-buscar_siglo_veinte("vgsales.csv")
+# buscar_siglo_veinte("vgsales.csv")
