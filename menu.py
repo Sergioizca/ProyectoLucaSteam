@@ -7,7 +7,7 @@ from modificar_juego import *
 from Añadir_juego import *
 from buscar_nintendo import *
 from buscar_editores import *
-from Buscar_5topventas import *
+from buscar_5topventas import *
 from buscar_siglo_veinte import *
 from top5porregiones import *
 from listar_juegos_genero import *
@@ -84,6 +84,7 @@ def menu(lista):
 
 if __name__ == "__main__":
     archivo = str("vgsales.csv")
+
     def main():
         lista = convertir_csv_diccionarios("vgsales.csv")
         menu(lista)
