@@ -1,5 +1,3 @@
-import pandas as pd
-
 
 def buscar_juego_nombre(archivo):
 
