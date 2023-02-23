@@ -12,4 +12,4 @@ def buscar_top_5_ventas_globales(archivo):
     print(top_5)
 
 
-buscar_top_5_ventas_globales("vgsales.csv")
+# buscar_top_5_ventas_globales("vgsales.csv")

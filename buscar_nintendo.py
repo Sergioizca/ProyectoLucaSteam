@@ -8,4 +8,4 @@ def buscar_nintendo(archivo):
     print("Juegos de Nintendo:")
     print(nintendo_games)
 
-buscar_nintendo("vgsales.csv")
+# buscar_nintendo("vgsales.csv")
