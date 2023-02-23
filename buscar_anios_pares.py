@@ -6,4 +6,4 @@ def buscar_anios_pares(archivo):
     print(datos[['Rank', 'Name', 'Year']])
 
 
-buscar_anios_pares("vgsales.csv")
+# buscar_anios_pares("vgsales.csv")
