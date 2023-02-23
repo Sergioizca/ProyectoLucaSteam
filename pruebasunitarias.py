@@ -11,14 +11,13 @@ class TestBuscarNintendo(unittest.TestCase):
         archivo = "vgsales.csv"
         buscar_nintendo(archivo)
 
-
+#dado un archivo csv con pandas compruebe que han cargado correctamente en una lista de diccionarios.
 def carga_csv_lista(archivo):
-    """Carga un archivo CSV en una lista de diccionarios"""
+    # Carga un archivo CSV en una lista de diccionarios
     datos = pd.read_csv(archivo)
     lista = datos.to_dict('records')
     return lista
 
-#dado un archivo csv con pandas compruebe que han cargado correctamente en una lista de diccionarios.
 class TestCarga(unittest.TestCase):
 
     def test_carga_csv_lista(self):
