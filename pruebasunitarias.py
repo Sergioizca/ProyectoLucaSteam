@@ -1,6 +1,7 @@
 import unittest
 import pandas as pd
 from buscar_nintendo import *
+from convertir_csv_diccionario import *
 
 
 #comprueba que el archivo es válido para cargarlo.
@@ -11,31 +12,35 @@ class TestBuscarNintendo(unittest.TestCase):
         archivo = "vgsales.csv"
         buscar_nintendo(archivo)
 
-#dado un archivo csv con pandas compruebe que han cargado correctamente en una lista de diccionarios.
-def carga_csv_lista(archivo):
-    # Carga un archivo CSV en una lista de diccionarios
-    datos = pd.read_csv(archivo)
-    lista = datos.to_dict('records')
-    return lista
+#comparar si la primera fila coincide con la primera fila cargada
 
-class TestCarga(unittest.TestCase):
+import unittest
+import pandas as pd
 
-    def test_carga_csv_lista(self):
-        lista = carga_csv_lista('vgsales.csv')
-        self.assertEqual(len(lista), 16598)
-        self.assertEqual(lista[0]['Rank'], 1)
-        self.assertEqual(lista[0]['Name'], 'Wii Sports')
-        self.assertEqual(lista[0]['Platform'], 'Wii')
-        self.assertEqual(lista[0]['Year'], 2006)
-        self.assertEqual(lista[0]['Genre'], 'Sports')
-        self.assertEqual(lista[0]['Publisher'], 'Nintendo')
-        self.assertEqual(lista[0]['NA_Sales'], 41.49)
-        self.assertEqual(lista[0]['EU_Sales'], 29.02)
-        self.assertEqual(lista[0]['JP_Sales'], 3.77)
-        self.assertEqual(lista[0]['Other_Sales'], 8.46)
-        self.assertEqual(lista[0]['Global_Sales'], 82.74)
-        
 
- 
+class TestCSV(unittest.TestCase):
+
+    def test_primera_y_ultima_fila(self):
+        # Cargar el archivo CSV utilizando pandas
+        df = pd.read_csv('vgsales.csv')
+        # Obtener la primera y última fila del archivo cargado
+        primera_fila_cargada = df.iloc[0].tolist()
+        ultima_fila_cargada = df.iloc[-1].tolist()
+        # Leer el archivo CSV como un archivo de texto
+        f=convertir_csv_diccionarios('vgsales.csv')
+        # Obtener la primera y última línea del archivo
+        lineas_archivo = f.readlines()
+        primera_linea_archivo = lineas_archivo[0].strip()
+        ultima_linea_archivo = lineas_archivo[-1].strip()
+        # Convertir la primera y última línea del archivo en listas de valores
+        primera_fila_archivo = primera_linea_archivo.split(',')
+        ultima_fila_archivo = ultima_linea_archivo.split(',')
+        # Comparar las dos listas
+        self.assertListEqual(primera_fila_cargada, primera_fila_archivo)
+        self.assertListEqual(ultima_fila_cargada, ultima_fila_archivo)
+
+
 if __name__ == '__main__':
     unittest.main()
+
+
