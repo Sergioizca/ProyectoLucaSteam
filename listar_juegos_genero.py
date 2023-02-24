@@ -10,6 +10,6 @@ def listar_juegos_genero(archivo):
 
     print(f"Los juegos de {genero} son:")
     print(juegos_por_genero)
-
+    return juegos_por_genero
 
 # listar_juegos_genero("vgsales.csv")
