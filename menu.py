@@ -54,7 +54,7 @@ def menu(lista):
                     buscar_nintendo(archivo)
                 case 6 | None:
                     print("Ver listado de Editores")
-                    buscar_editores(archivo)
+                    print(buscar_editores(archivo))
                 case 7 | None:
                     print("Ver los 5 juegos más vendidos del mundo")
                     buscar_top_5_ventas_globales(archivo)
