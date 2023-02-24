@@ -8,4 +8,4 @@ def buscar_editores(archivo):
     juegos_editor = datos.loc[datos['Publisher'].isin([editor, 'N/A', ""])]
 
     print(f"Los juegos de {editor} son:")
-    print(juegos_editor)
+    return(juegos_editor)
